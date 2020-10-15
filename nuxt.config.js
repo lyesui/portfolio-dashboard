@@ -35,7 +35,20 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
+    '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: [
+      'assets/scss/_variables.scss',
+      'assets/scss/_mixins.scss',
+    ]
+  },
+
+  auth: {
+    // Options
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
